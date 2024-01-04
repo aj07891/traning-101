@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+ body{
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    /* background-color: rgb(255, 255, 255); */
+}
+input, button{
+    color: black;
+    font-weight: 600;
+    max-height: 30px;
+    border-top: none;
+}
+.login{
+    /* border: 1px solid rgb(238, 238, 238); */
+    background-color: rgb(0, 255, 38);
+    border-radius: 2px;
+    padding: 5%;
+}
+.register{
+    background-color: rgb(255, 0, 0);
+    border-radius: 2px;
+    padding: 2%;
+}
+.head{
+    height: 60vh;
+    position: absolute;
+    background-image: url(car_front.jpg);
+    background-size: cover;
+    background-position-y: -10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.topmenu{
+/* position: fixed; */
+/* top: 2px; */
+position: absolute;
+    top: 0%;
+    background-color: #8b82821f;
+    border-radius: 10px;
+}
+.nav-logo{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+    color: crimson;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+.button{
+    background-color: transparent;
+    color: aliceblue;
+    /* border: 2px solid gray; */
+    font-size: medium;
+    max-width: 50px;
+}
+.register:hover{
+    color: aliceblue;
+}
+.login:hover{
+    color: aliceblue;
+}
+.searchbar{
+    background-color: transparent;
+    border: 2px solid gray;
+    max-width: 200px;
+    color: #333;
+}
+.searchbar:hover{
+    border: 2px solid aliceblue;
+    color: aliceblue;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: rgb(252, 97, 0);
+    border: 1px solid rgba(230, 91, 11,0.3);
+}
+.ads{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.t1{
+    font-family: poppins;
+    font-size: 3em;
+    color: rgb(255, 230, 128);
+}
+.t2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    color: rgb(255, 225, 0);
+    position: relative;
+    left: 2%;
+}
+.t3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    position: relative;
+    left: 3%;
+}
+@media screen and (max-width:460px){
+    .template{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        top: 10%;
+    }
+}
+p{
+    color: brown;
+}
+.middle{
+    /* border: 2px solid salmon; */
+    /* height: 500px; */
+    position: relative;
+    top: 60vh;
+    padding: 0px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center; */
+}
+.benefits-list{
+    /* border: 2px solid slateblue; */
+    justify-content: space-evenly;
+    margin: 2% auto;
+}
+#bene{
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+}
+.cardd{
+    /* margin: 10% auto auto; */
+    height: max-content;
+    border: none;
+    background-color: transparent;
+    /* box-shadow: 8px 8px 20px 5px rgba(124, 124, 125, 0.5); */
+    border-radius: 15px;
+}
+/* .card-text{
+    text-align: center;
+} */
+.detail{
+    font-weight: bold;
+    text-align: center;
+}
+.b1{
+    margin: 0px;
+}
+.middle-down{
+    background-image: url(chuttersnap-gts_Eh4g1lk-unsplash.jpg);
+    /* background-size: cover; */
+}
+.avail{
+    /* width: 20vw; */
+    margin: auto;
+    font-size: 2rem;
+    font-family: serif;
+    font-weight: normal;
+}
+.works{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+.works-option{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    justify-content: space-evenly;
+}
+.rental{
+    display: flex;
+    flex-direction: row;
+}
+.texting{
+    color: gray;
+}
+.rent-middle,.rent-first,.rent-third{
+    /* background-color: rgba(167, 163, 163, 0.222); */
+    border-radius: 10px;
+}
+.circlee{
+    border: 1px solid rgb(208, 208, 208);
+    height: 10vh;
+    width: max-content;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rent-middle{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.texting{
+    text-align: center;
+}
+.content{
+    width: 20vw;
+    align-self: center;
+    color: white;
+}
+.whatwe{
+    text-align: center;
+    color: rgb(255, 0, 0);
+}
+.write{
+    width: 40vw;
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.offers{
+    text-align: justify;
+    width: 30vw;
+    color: gray;
+}
+.showcase{
+    margin-top: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    /* position: relative; */
+    /* z-index: 50px; */
+}
+.carslist{
+    justify-self: center;
+    margin: auto;
+    /* background-color: rgba(255, 255, 255, 0.305); */
+    background-color: transparent;
+}
+.cellform{
+    color: aliceblue;
+}
+.body-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.bg-info{
+    grid-column: 1/3;
+}
+.gosome{
+    grid-column: 1/3;
+}
+.car-name{
+    grid-column: 1/3;
+    color: gold;
+}
+.price{
+    color: gold;
+}
+.fooer{
+    background-color: rgba(0, 0, 0, 0.492);
+}
+.footer{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 3fr;
+    
+    
+}
+
+@media screen and (max-width:450px) {
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    
+}
+@media screen and (max-width:300px) {
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    
+}
+.footer-para,.list-footer{
+    color: white;
+}
+.list-of{
+    display: inline;
+    font-size: 1rem;
+}
+.footer-down{
+    background-color: black;
+    height: 5vh;
+}
+.footer-down.para{
+    text-align: center;
+}
+.badges-lable{
+    position: absolute;
+    top: 50vh;
+}

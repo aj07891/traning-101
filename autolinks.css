@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: radial-gradient(circle at 10% 50%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    
+}
+input, button{
+    color: black;
+    font-weight: 600;
+    max-height: 30px;
+    border-top: none;
+}
+.topmenu{
+    position: absolute;
+    top: 2px;
+    background-color: #8b82821f;
+    border-radius: 10px;
+    /* border: 2px solid salmon; */
+    width: 100vw;
+    /* object-fit: contain; */
+    /* padding: 5px; */
+}
+.login{
+    /* border: 1px solid rgb(238, 238, 238); */
+    background-color: rgb(0, 255, 38);
+    border-radius: 2px;
+    padding: 5%;
+}
+.register{
+    background-color: rgb(255, 0, 0);
+    border-radius: 2px;
+    padding: 2%;
+}
+.head{
+    /* border: 2px solid salmon; */
+    height: 60vh;
+    position: absolute;
+    background-image: url(car_front.jpg);
+    background-size: cover;
+    background-position-y: -10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+    
+}
+.nav-logo{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+    color: crimson;
+}
+.toplist{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    /* width: 100vw; */
+    /* border: 2px solid purple; */
+    /* justify-content: space-between;
+    align-content: center; */
+}
+.button{
+    background-color: transparent;
+    color: aliceblue;
+    /* border: 2px solid gray; */
+    font-size: medium;
+    max-width: 50px;
+}
+.register:hover{
+    color: aliceblue;
+}
+.login:hover{
+    color: aliceblue;
+}
+.searchbar{
+    background-color: transparent;
+    border: 2px solid gray;
+    max-width: 200px;
+    color: #333;
+}
+.searchbar:hover{
+    border: 2px solid aliceblue;
+    color: aliceblue;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: rgb(252, 97, 0);
+    border: 1px solid rgba(230, 91, 11,0.3);
+}
+.ads{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.t1{
+    font-family: poppins;
+    font-size: 3em;
+    color: rgb(255, 230, 128);
+}
+.t2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    color: rgb(255, 225, 0);
+    position: relative;
+    left: 2%;
+}
+.t3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    position: relative;
+    left: 3%;
+}
+@media screen and (max-width:460px){
+    .template{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        top: 10%;
+    }
+    .toplist{
+        /* height: 10vh; */
+        /* column-gap: 0px; */
+        display: grid;
+        grid-template-columns: 1fr  1fr;
+    }
+    
+}
+@media screen and (max-width:800px) {
+    .toplist{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+}
+p{
+    color: brown;
+}
+.section-content{
+    /* border: 2px solid gold; */
+    position: relative;
+    top: 65vh;
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 10%; */
+    /* justify-content: center;
+    align-content: center; */
+    padding: 0;
+
+}
+.content-form{
+    /* border: 2px solid rgb(208, 0, 255); */
+    margin: auto;
+}
+.listed-cars{
+    gap: 5px;
+    justify-content: center;
+}
+.body-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.bg-info{
+    grid-column: 1/3;
+}
+.gosome{
+    grid-column: 1/3;
+}
+.car-name{
+    grid-column: 1/3;
+    color: gold;
+}
+.price{
+    color: gold;
+}
+.cellform{
+    color: white;
+}
+.rangeshow{
+    display: grid;
+    grid-template-columns: 2fr  2fr;
+}
+#r1,#r3{
+    width: 6vw;
+}
+#r1{
+    grid-template-columns: 1/3;
+}
+#r2{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+}
+.vechile-type{
+    /* border: 2px solid gold; */
+    display: grid;
+   grid-template-areas: "nav nav"
+            "left right";
+}
+.vechile-heading{
+    grid-area: nav;
+
+}
+span{
+    color: white;
+}
+.vb1{
+    grid-area: left;
+    height: fit-content;
+    width: fit-content;
+}
+.vb2{
+    grid-area: right;
+    /* border: 2ps solid rgb(255, 55, 0); */
+}
+.autolink-section-aside{
+    /* border: 2px solid lime; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 70vh;
+    /* background-color: rgba(157, 156, 156, 0.401); */
+}
+.fooer{
+    background-color: rgba(0, 0, 0, 0.492);
+    /* border: 2px solid rgb(0, 42, 252); */
+    width: 100vw;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 3fr;
+    /* border: 2px solid lawngreen; */
+    /* margin-top: 31%; */
+}
+.footer-para,.list-footer{
+    color: white;
+}
+.list-of{
+    display: inline;
+}
+.footer-down{
+    background-color: black;
+    height: 5vh;
+}
+.footer-down.para{
+    text-align: center;
+}
+.showonpage{
+    display: flex;
+    justify-content: space-between;
+}
+.form-select{
+    width: 10vw;
+}
+.showlist{
+    margin-top: 1%;
+    margin-bottom: 2%;
+    /* border: 2px solid paleturquoise; */
+}
+.page-num{
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+.showoption{
+    color: white;
+}
+.badges-lable{
+    position: absolute;
+    top: 50vh;
+}
+.carslist{
+    /* background-color: rgba(255, 255, 255, 0.305); */
+    background-color: transparent;
+   border-left: 1px solid white;
+   border-right: 1px solid white;
+}
+.carslist:hover{
+    background-color: rgba(255, 255, 255, 0.305);
+
+}
+/* .autolink-section-aside:hover{
+    background-color: rgba(255, 255, 255, 0.305);
+} */
+.form-control{
+    background-color: transparent;
+}
+@media screen and (max-width:450px) {
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    
+}
+@media screen and (max-width:300px) {
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    
+}
+option{
+    color: black;
+}
